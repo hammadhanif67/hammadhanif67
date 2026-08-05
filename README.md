@@ -1,4 +1,4 @@
-<h1 align="center">Hi, I'm Hammad Minhas👋</h1>
+<h1 align="center">Hi, I'm Hammad Minhas 👋</h1>
 
 <h3 align="center">Frontend Developer | React • TypeScript • Tailwind CSS</h3>
 
@@ -41,18 +41,6 @@
 | **FileForge** | All-in-one file toolkit — convert, compress, secure & create PDFs, images, documents (60+ tools) | [Live](https://fileforge-oja9.onrender.com) |
 | **LinkAura** | Curated directory to discover useful websites, AI tools, books & research resources | [Live](https://link-aura-ruby.vercel.app) |
 | **VistechBot** | Animated SaaS product landing & UI, built with React + GSAP | [Live](https://vistechbot.vercel.app) |
-
----
-
-### 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=hammadhanif67&show_icons=true&theme=tokyonight&hide_border=true" alt="Hammad's GitHub stats" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hammadhanif67&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
-</p>
 
 ---
 
