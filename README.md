@@ -47,11 +47,11 @@
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/..." ... />
+  <img src="https://github-readme-stats.vercel.app/api?username=hammadhanif67&show_icons=true&theme=tokyonight&hide_border=true" alt="Hammad's GitHub stats" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/..." ... />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hammadhanif67&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
 </p>
 
 ---
