@@ -41,7 +41,7 @@ Software Engineering student at **Government College University Faisalabad** (20
 
 ### Activity
 
-<img src="https://raw.githubusercontent.com/hammadhanif67/hammadhanif67/output/activity.svg" width="100%" alt="Contribution activity: totals, streaks and a year-long contribution grid">
+<img src="https://raw.githubusercontent.com/hammadhanif67/hammadhanif67/refs/heads/output/activity.svg" width="100%" alt="Contribution activity: totals, streaks and a year-long contribution grid">
 
 <br>
 
