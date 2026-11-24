@@ -6,7 +6,7 @@
 <p align="center">
   <a href="https://hammad-minhas-portfolio.vercel.app"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-hammad--minhas-3346c8?style=flat-square&logo=vercel&logoColor=white"></a>
   <a href="https://www.linkedin.com/in/hammad-minhas-ab9109402/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Hammad%20Minhas-0A66C2?style=flat-square&logo=linkedin&logoColor=white"></a>
-  <a href="https://www.trenvomedia.com"><img alt="Trenvo Media" src="https://img.shields.io/badge/Business-Trenvo%20Media-141c3a?style=flat-square&logo=googlechrome&logoColor=white"></a>
+  <a href="https://github.com/trenvo-media"><img alt="Trenvo Media on GitHub" src="https://img.shields.io/badge/Org-Trenvo%20Media-141c3a?style=flat-square&logo=github&logoColor=white"></a>
   <img alt="Open to work" src="https://img.shields.io/badge/Open%20to-internships%20%26%20junior%20roles-22a06b?style=flat-square">
 </p>
 
@@ -58,7 +58,7 @@ I'm a Software Engineering student at **Government College University Faisalabad
 
 ## Business
 
-I also run **[Trenvo Media](https://www.trenvomedia.com)**, a performance-marketing studio that handles paid media, creative production and measurement as one system. Website: [trenvomedia.com](https://www.trenvomedia.com)
+I also run **[Trenvo Media](https://github.com/trenvo-media)**, a performance-marketing studio that handles paid media, creative production and measurement as one system. Website: [trenvomedia.com](https://www.trenvomedia.com) · GitHub: [@trenvo-media](https://github.com/trenvo-media)
 
 ## Contact
 
