@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Hammad Minhas, Full-Stack Developer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#141c3a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.85" cy="0.1" r="0.6">
+      <stop offset="0" stop-color="#3346c8" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#3346c8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="300" fill="url(#bg)"/>
+  <rect width="1200" height="300" fill="url(#glow)"/>
+  <rect x="64" y="86" width="6" height="128" fill="#5b6cff"/>
+  <text x="96" y="140" fill="#ffffff" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="58" font-weight="800" letter-spacing="2">HAMMAD MINHAS</text>
+  <text x="98" y="184" fill="#aeb7f2" font-family="Segoe UI, Inter, Helvetica, Arial, sans-serif" font-size="24" font-weight="600">Full-Stack Developer · React · Next.js · TypeScript · FastAPI</text>
+  <text x="98" y="218" fill="#7d86b8" font-family="Consolas, Menlo, monospace" font-size="17">Software Engineering @ GCUF · Faisalabad, Pakistan</text>
+  <g fill="#5b6cff" opacity="0.9">
+    <rect x="1036" y="96" width="22" height="22"/><rect x="1064" y="96" width="22" height="22"/><rect x="1092" y="96" width="22" height="22"/>
+    <rect x="1036" y="124" width="22" height="22"/><rect x="1064" y="124" width="22" height="22" fill="#ffffff"/>
+    <rect x="1036" y="152" width="22" height="22"/><rect x="1064" y="152" width="22" height="22"/><rect x="1092" y="152" width="22" height="22"/>
+  </g>
+</svg>

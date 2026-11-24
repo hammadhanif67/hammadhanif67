@@ -1,49 +1,67 @@
-<h1 align="center">Hi, I'm Hammad Minhas 👋</h1>
-
-<h3 align="center">Frontend Developer | React • TypeScript • Tailwind CSS</h3>
-
-<p align="center">
-  Software Engineering student at GCUF, building fast, responsive, and user-friendly web applications.
-</p>
-
----
-
-### 🚀 About Me
-
-- 🎓 Software Engineering student at **Government College University, Faisalabad** (2024–2028)
-- 💻 I build modern web apps with **React, TypeScript, JavaScript & Tailwind CSS**
-- 🎨 I care about clean code, smooth animations (**GSAP**), and great user experience
-- 🌱 Currently sharpening my skills in advanced React patterns and full-stack development
-- 💬 Open to **Frontend Developer / Web Development** opportunities — remote or on-site
-- 📫 Reach me on [LinkedIn](https://www.linkedin.com/in/hammad-minhas-ab9109402/)
-
----
-
-### 🛠️ Tech Stack
-
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-
----
-
-### 🌟 Featured Projects
-
-| Project | Description | Live |
-|---|---|---|
-| **FileForge** | All-in-one file toolkit — convert, compress, secure & create PDFs, images, documents (60+ tools) | [Live](https://fileforge-oja9.onrender.com) |
-| **LinkAura** | Curated directory to discover useful websites, AI tools, books & research resources | [Live](https://link-aura-ruby.vercel.app) |
-| **VistechBot** | Animated SaaS product landing & UI, built with React + GSAP | [Live](https://vistechbot.vercel.app) |
-
----
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/banner-dark.svg">
+  <img alt="Hammad Minhas, Full-Stack Developer: React, Next.js, TypeScript, FastAPI" src="./assets/banner-light.svg" width="100%">
+</picture>
 
 <p align="center">
-  <i>Always building, always learning. Let's connect! 🚀</i>
+  <a href="https://hammad-minhas-portfolio.vercel.app"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-hammad--minhas-3346c8?style=flat-square&logo=vercel&logoColor=white"></a>
+  <a href="https://www.linkedin.com/in/hammad-minhas-ab9109402/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Hammad%20Minhas-0A66C2?style=flat-square&logo=linkedin&logoColor=white"></a>
+  <a href="https://www.trenvomedia.com"><img alt="Trenvo Media" src="https://img.shields.io/badge/Business-Trenvo%20Media-141c3a?style=flat-square&logo=googlechrome&logoColor=white"></a>
+  <img alt="Open to work" src="https://img.shields.io/badge/Open%20to-internships%20%26%20junior%20roles-22a06b?style=flat-square">
 </p>
+
+## About
+
+I'm a Software Engineering student at **Government College University Faisalabad** (2024–2028) who builds complete web products, not just screens.
+
+- **Front end:** React 19, Next.js 16 and TypeScript, with accessibility (WCAG 2.2 AA), SEO and performance treated as requirements.
+- **Back end:** FastAPI and Cloudflare Pages Functions + D1, including auth, booking rules and server-side validation.
+- **Quality:** Playwright + axe tests, Lighthouse CI budgets, strict TypeScript and per-page Content-Security-Policy.
+- **Beyond the web:** a 48-lesson course site on Computer Organization & 8086 Assembly, and an NTFS file-recovery tool in C++.
+
+## Tech stack
+
+<p>
+  <img alt="Languages and tools" src="https://skillicons.dev/icons?i=ts,js,html,css,python,cpp&theme=dark&perline=12">
+  <br>
+  <img alt="Frameworks" src="https://skillicons.dev/icons?i=react,nextjs,vite,tailwind,nodejs,fastapi&theme=dark&perline=12">
+  <br>
+  <img alt="Data, testing and deployment" src="https://skillicons.dev/icons?i=sqlite,cloudflare,vercel,git,github,githubactions&theme=dark&perline=12">
+</p>
+
+**Also:** Framer Motion · GSAP · React Router · Playwright · axe-core · Lighthouse CI · ESLint · Prettier · CMake
+
+## Featured projects
+
+| Project | What it is | Stack | Links |
+|---|---|---|---|
+| **[COAL Docs](https://github.com/hammadhanif67/assembly-language-docs)** | Course site for Computer Organization & Assembly Language: 48 lessons, 53 diagrams, 16 calculators that show their working | JavaScript · CSS | [Live](https://hammadhanif67.github.io/assembly-language-docs/) |
+| **[Downsize](https://github.com/hammadhanif67/Downsize)** | Image resizer, compressor and converter that runs entirely in the browser, with no uploads | React 19 · TypeScript · Tailwind v4 | [Live](https://downsize-alpha.vercel.app) |
+| **[AI Resume Analyzer](https://github.com/hammadhanif67/AI-Resume-Analyzer)** | Full-stack resume screening: 33 REST endpoints, ATS scoring, job matching, PDF reports, admin panel | FastAPI · React · TypeScript · SQLite | [Code](https://github.com/hammadhanif67/AI-Resume-Analyzer) |
+| **Karakoram Trails** | Tour-booking platform for Northern Pakistan with live pricing, seat holds and an admin | Next.js 16 · Cloudflare D1 · Framer Motion | Private · demo on request |
+| **[VistechBot](https://github.com/hammadhanif67/VistechBot)** | Marketing site for an AI customer-support SaaS with design-token theming and build-time SEO | React 19 · Vite · GSAP | [Live](https://vistechbotaipk.vercel.app) |
+| **[LinkAura](https://github.com/hammadhanif67/LinkAura)** | Curated directory of websites, AI tools, books and research resources | React · TypeScript · Tailwind | [Live](https://link-aura-ruby.vercel.app) |
+
+## GitHub stats
+
+<p>
+  <img height="165" alt="Contribution streak" src="https://streak-stats.demolab.com?user=hammadhanif67&hide_border=true&theme=transparent&ring=3346c8&fire=3346c8&currStreakLabel=3346c8">
+  <img height="165" alt="Most used languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hammadhanif67&layout=compact&hide_border=true&theme=transparent&title_color=3346c8&exclude_repo=chariotclaims">
+</p>
+
+## Contribution activity
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hammadhanif67/hammadhanif67/output/github-contribution-grid-snake-dark.svg">
+  <img alt="Contribution activity" src="https://raw.githubusercontent.com/hammadhanif67/hammadhanif67/output/github-contribution-grid-snake.svg" width="100%">
+</picture>
+
+## Business
+
+I also run **[Trenvo Media](https://www.trenvomedia.com)**, a performance-marketing studio that handles paid media, creative production and measurement as one system. Website: [trenvomedia.com](https://www.trenvomedia.com)
+
+## Contact
+
+- **LinkedIn:** [hammad-minhas-ab9109402](https://www.linkedin.com/in/hammad-minhas-ab9109402/)
+- **Portfolio:** [hammad-minhas-portfolio.vercel.app](https://hammad-minhas-portfolio.vercel.app)
+- **Location:** Faisalabad, Pakistan · open to remote and on-site roles
