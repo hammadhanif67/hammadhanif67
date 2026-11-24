@@ -22,7 +22,7 @@ Software Engineering student at **Government College University Faisalabad** (20
 
 ### Stack
 
-<img src="./assets/tech-stack.svg" width="100%" alt="Tech stack. Languages: TypeScript, JavaScript, Python, HTML and CSS, C++, SQL, 8086 Assembly. Frameworks: React 19, Next.js 16, Vite, Tailwind CSS, FastAPI, Framer Motion, GSAP. Quality: Playwright, axe-core, Lighthouse CI, ESLint, Prettier, strict TypeScript, WCAG 2.2 AA. Platform: Cloudflare Pages, Cloudflare D1 and R2, Vercel, GitHub Actions, Git, SQLite, Node.js.">
+<img src="./assets/tech.svg" width="100%" alt="Tech stack. Languages: TypeScript, JavaScript, Python, HTML5, CSS, C++, SQL. Frameworks: React 19, Next.js 16, Vite, Tailwind CSS, FastAPI, Framer Motion, GSAP. Quality: Playwright, axe-core, Lighthouse CI, ESLint, Prettier, strict TypeScript, WCAG 2.2 AA. Platform: Cloudflare Pages, Cloudflare D1 and R2, Vercel, GitHub Actions, Git, SQLite, Node.js.">
 
 <br>
 
@@ -41,12 +41,7 @@ Software Engineering student at **Government College University Faisalabad** (20
 
 ### Activity
 
-<img src="https://streak-stats.demolab.com?user=hammadhanif67&background=0B0B0B&border=232323&ring=E30613&fire=E30613&currStreakLabel=E30613&currStreakNum=F5F5F5&sideNums=F5F5F5&sideLabels=A3A3A3&dates=6B6B6B&stroke=232323" width="100%" alt="Contribution streak">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hammadhanif67/hammadhanif67/output/grid-dark.svg">
-  <img alt="Contribution grid" src="https://raw.githubusercontent.com/hammadhanif67/hammadhanif67/output/grid-light.svg" width="100%">
-</picture>
+<img src="https://raw.githubusercontent.com/hammadhanif67/hammadhanif67/output/activity.svg" width="100%" alt="Contribution activity: totals, streaks and a year-long contribution grid">
 
 <br>
 
