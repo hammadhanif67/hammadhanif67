@@ -10,14 +10,12 @@ OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 
 os.makedirs(OUT, exist_ok=True)
 
 
-def hmark(c, x, y, size, ink=INK):
-    """The H mark: two stems with opposite 45-degree cuts and a rising red crossbar.
-    Drawn on a 100-unit grid, placed with its top-left at (x, y)."""
-    s = size / 100
-    c.raw(f'<g transform="translate({x} {y}) scale({s:.4f})">'
-          f'<path fill="{ink}" d="M14 24L28 10H38V90H14Z"/>'
-          f'<path fill="{ink}" d="M62 10H86V76L72 90H62Z"/>'
-          f'<path fill="{RED}" d="M38 58L62 42V58L38 74Z"/></g>')
+MARK = 'tile'   # H logo concept from tools/hmarks.py: grid, tile, frame, stencil, slant, mono
+
+
+def hmark(c, x, y, size):
+    from hmarks import place
+    c.raw(place(MARK, x, y, size))
 
 
 def hero():
@@ -31,7 +29,7 @@ def hero():
     c.text('Full-Stack Developer', 'Inter', 600, 25, 264, 214, INK)
     c.text('React   ·   Next.js   ·   TypeScript   ·   FastAPI', 'Inter', 400, 19, 264, 248, MUTED)
     c.text('SOFTWARE ENGINEERING · GCUF · FAISALABAD', 'Inter', 600, 12, W - 72, H - 40, DIM, tracking=0.14, anchor='end')
-    c.save(os.path.join(OUT, 'header.svg'))
+    c.save(os.path.join(OUT, 'masthead.svg'))
 
 
 def button(fname, label, primary=False):
