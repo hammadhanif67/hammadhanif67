@@ -10,18 +10,70 @@ OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 
 os.makedirs(OUT, exist_ok=True)
 
 
+BOLD, LIGHT = 'MinhasDisplay-Bold', 'MinhasDisplay-Light'
+
+
+def brand_defs(c):
+    """Paint servers shared by the wordmark: brushed silver, red metal and a red glow."""
+    c.define('<linearGradient id="silver" x1="0" y1="0" x2="0" y2="1">'
+             '<stop offset="0" stop-color="#7d838c"/><stop offset=".38" stop-color="#c9ced4"/>'
+             '<stop offset=".5" stop-color="#ffffff"/><stop offset=".56" stop-color="#b4bac1"/>'
+             '<stop offset="1" stop-color="#f7f8fa"/></linearGradient>')
+    c.define('<linearGradient id="redmetal" x1="0" y1="0" x2="0" y2="1">'
+             '<stop offset="0" stop-color="#8a0008"/><stop offset=".45" stop-color="#E30613"/>'
+             '<stop offset=".55" stop-color="#ff2b2b"/><stop offset="1" stop-color="#ff5a52"/></linearGradient>')
+    c.define('<filter id="glow" x="-15%" y="-80%" width="130%" height="260%">'
+             '<feGaussianBlur in="SourceGraphic" stdDeviation="90" result="b1"/>'
+             '<feGaussianBlur in="SourceGraphic" stdDeviation="28" result="b2"/>'
+             '<feMerge><feMergeNode in="b1"/><feMergeNode in="b2"/><feMergeNode in="SourceGraphic"/></feMerge></filter>')
+    c.define('<filter id="sheen" x="-5%" y="-20%" width="110%" height="140%">'
+             '<feGaussianBlur in="SourceAlpha" stdDeviation="40" result="s"/>'
+             '<feOffset in="s" dy="-60" result="o"/><feFlood flood-color="#000" flood-opacity=".55"/>'
+             '<feComposite in2="o" operator="in" result="sh"/>'
+             '<feMerge><feMergeNode in="sh"/><feMergeNode in="SourceGraphic"/></feMerge></filter>')
+    c.define('<linearGradient id="lineL" x1="0" x2="1"><stop offset="0" stop-color="#E30613" stop-opacity="0"/>'
+             '<stop offset="1" stop-color="#E30613"/></linearGradient>')
+    c.define('<linearGradient id="lineR" x1="0" x2="1"><stop offset="0" stop-color="#E30613"/>'
+             '<stop offset="1" stop-color="#E30613" stop-opacity="0"/></linearGradient>')
+    c.define('<radialGradient id="vignette" cx=".62" cy=".45" r=".7">'
+             '<stop offset="0" stop-color="#1a0204"/><stop offset=".55" stop-color="#070707"/>'
+             '<stop offset="1" stop-color="#030303"/></radialGradient>')
+
+
+def wordmark(c, cx, baseline, size, gap_ratio=0.38, tracking=0.06):
+    """HAMMAD in silver, MINHAS in glowing red metal, centred on cx. Returns total width."""
+    w1 = c.measure('HAMMAD', BOLD, 0, size, tracking)
+    w2 = c.measure('MINHAS', BOLD, 0, size, tracking)
+    gap = size * gap_ratio
+    x = cx - (w1 + gap + w2) / 2
+    c.text('HAMMAD', BOLD, 0, size, x, baseline, 'url(#silver)', tracking, attrs='filter="url(#sheen)"')
+    c.text('MINHAS', BOLD, 0, size, x + w1 + gap, baseline, 'url(#redmetal)', tracking, attrs='filter="url(#glow)"')
+    return w1 + gap + w2
+
+
+def tagline(c, cx, baseline, size, left, right, rule):
+    """Widely tracked line in the light weight, white then red, between fading red rules."""
+    t = 0.42
+    lw = c.measure(left + '  ', LIGHT, 0, size, t)
+    rw = c.measure(right, LIGHT, 0, size, t)
+    x = cx - (lw + rw) / 2
+    c.text(left, LIGHT, 0, size, x, baseline, INK, t)
+    c.text(right, LIGHT, 0, size, x + lw, baseline, RED, t)
+    y = baseline - size * 0.36
+    c.rect(x - 32 - rule, y - 1, rule, 2, 'url(#lineL)')
+    c.rect(x + lw + rw + 32 - size * t, y - 1, rule, 2, 'url(#lineR)')
+
+
 def hero():
-    W, H = 1280, 320
+    W, H = 1280, 360
     c = Canvas(W, H, 'Hammad Minhas, Full-Stack Developer: React, Next.js, TypeScript, FastAPI')
-    c.rect(0, 0, W, H, BG)
-    c.rect(0.5, 0.5, W - 1, H - 1, 'none', EDGE)
-    logo(c, 72, 91)
-    c.text('Hammad Minhas', 'InterTight', 800, 68, 262, 148, INK, tracking=-0.02)
-    c.rect(265, 170, 64, 4, RED)
-    c.text('Full-Stack Developer', 'Inter', 600, 25, 264, 214, INK)
-    c.text('React   ·   Next.js   ·   TypeScript   ·   FastAPI', 'Inter', 400, 19, 264, 248, MUTED)
-    c.text('SOFTWARE ENGINEERING · GCUF · FAISALABAD', 'Inter', 600, 12, W - 72, H - 40, DIM, tracking=0.14, anchor='end')
-    c.save(os.path.join(OUT, 'hero.svg'))
+    brand_defs(c)
+    c.rect(0, 0, W, H, 'url(#vignette)')
+    c.rect(0.5, 0.5, W - 1, H - 1, 'none', '#1d1d1d')
+    wordmark(c, W / 2, 196, 96)
+    tagline(c, W / 2, 262, 19, 'FULL-STACK', 'DEVELOPER', 150)
+    c.text('REACT  ·  NEXT.JS  ·  TYPESCRIPT  ·  FASTAPI', LIGHT, 0, 13, W / 2, 314, MUTED, tracking=0.32, anchor='middle')
+    c.save(os.path.join(OUT, 'banner.svg'))
 
 
 def button(fname, label, primary=False):
@@ -78,13 +130,17 @@ def tech_stack():
 
 
 def avatar():
-    """Square profile picture: the name set in Inter Tight, centred for GitHub's circular crop."""
+    """Square profile picture: the wordmark stacked, centred for GitHub's circular crop."""
     S = 800
     c = Canvas(S, S, 'Hammad Minhas')
-    c.rect(0, 0, S, S, BG)
-    c.text('Hammad', 'InterTight', 800, 132, S / 2, 382, INK, tracking=-0.03, anchor='middle')
-    c.text('Minhas', 'InterTight', 800, 132, S / 2, 512, INK, tracking=-0.03, anchor='middle')
-    c.rect(S / 2 - 44, 560, 88, 8, RED)
+    brand_defs(c)
+    c.rect(0, 0, S, S, 'url(#vignette)')
+    size, t = 112, 0.05
+    for word, fill, attrs, base in [('HAMMAD', 'url(#silver)', 'filter="url(#sheen)"', 372),
+                                    ('MINHAS', 'url(#redmetal)', 'filter="url(#glow)"', 512)]:
+        c.text(word, BOLD, 0, size, S / 2, base, fill, t, anchor='middle', attrs=attrs)
+    c.rect(S / 2 - 120, 566, 240, 2, 'url(#lineL)')
+    c.rect(S / 2, 566, 120, 2, RED)
     c.save(os.path.join(OUT, 'avatar.svg'))
 
 

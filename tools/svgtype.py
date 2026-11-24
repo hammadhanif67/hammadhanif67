@@ -30,6 +30,9 @@ def _font(family, wght):
     key = (family, wght)
     if key not in _fonts:
         f = TTFont(os.path.join(FONT_DIR, family + '.ttf'))
+        if 'fvar' not in f:            # static font (e.g. MinhasDisplay-Bold)
+            _fonts[key] = f
+            return f
         axes = {a.axisTag: a for a in f['fvar'].axes}
         loc = {'wght': wght}
         if 'opsz' in axes:
@@ -84,6 +87,10 @@ class Canvas:
     def raw(self, svg):
         self.body.append(svg)
 
+    def define(self, svg):
+        """Add a gradient, filter or other paint server to <defs>."""
+        self.defs.append(svg)
+
     # -- text -------------------------------------------------------------
     def _glyph_id(self, family, wght, name, f):
         key = (family, wght, name)
@@ -100,7 +107,7 @@ class Canvas:
     def measure(self, s, family, wght, size, tracking=0.0):
         return self.text(s, family, wght, size, 0, 0, None, tracking, draw=False)
 
-    def text(self, s, family, wght, size, x, y, fill, tracking=0.0, anchor='start', draw=True):
+    def text(self, s, family, wght, size, x, y, fill, tracking=0.0, anchor='start', draw=True, attrs=''):
         f = _font(family, wght)
         kp = _kern(f, (family, wght))
         cmap, hmtx = f.getBestCmap(), f['hmtx']
@@ -124,7 +131,7 @@ class Canvas:
             if gid:
                 uses.append(f'<use href="#{gid}" x="{_num(cx / sc)}"/>')
             cx += a
-        self.body.append(f'<g fill="{fill}" transform="translate({_num(0)} {_num(y)}) scale({sc:.5f} {-sc:.5f})">{"".join(uses)}</g>')
+        self.body.append(f'<g fill="{fill}"{(" " + attrs) if attrs else ""} transform="translate({_num(0)} {_num(y)}) scale({sc:.5f} {-sc:.5f})">{"".join(uses)}</g>')
         return width
 
     # -- icons (Simple Icons, 24x24) -------------------------------------

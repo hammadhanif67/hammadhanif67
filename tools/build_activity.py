@@ -77,7 +77,7 @@ def build(user):
     for i, (label, value, unit) in enumerate(stats):
         x = pad + i * colw
         c.text(label, 'Inter', 600, 12, x, 52, MUTED, tracking=0.14)
-        c.text(value, 'InterTight', 800, 44, x, 104, RED if i == 1 else INK, tracking=-0.02)
+        c.text(value, 'MinhasDisplay-Bold', 0, 42, x, 104, RED if i == 1 else INK, tracking=0.04)
         c.text(unit, 'Inter', 500, 13, x, 128, DIM)
         if i:
             c.rect(x - 16, 36, 1, 96, LINE)
