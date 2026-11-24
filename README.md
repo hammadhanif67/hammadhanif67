@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/banner-dark.svg">
-  <img alt="Hammad Minhas, Full-Stack Developer: React, Next.js, TypeScript, FastAPI" src="./assets/banner-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
+  <img alt="Hammad Minhas, Full-Stack Developer: React, Next.js, TypeScript, FastAPI" src="./assets/hero-light.svg" width="100%">
 </picture>
 
 <p align="center">
