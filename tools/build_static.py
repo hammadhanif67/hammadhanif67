@@ -70,10 +70,10 @@ def hero():
     brand_defs(c)
     c.rect(0, 0, W, H, 'url(#vignette)')
     c.rect(0.5, 0.5, W - 1, H - 1, 'none', '#1d1d1d')
-    wordmark(c, W / 2, 196, 96)
-    tagline(c, W / 2, 262, 19, 'FULL-STACK', 'DEVELOPER', 150)
-    c.text('REACT  ·  NEXT.JS  ·  TYPESCRIPT  ·  FASTAPI', LIGHT, 0, 13, W / 2, 314, MUTED, tracking=0.32, anchor='middle')
-    c.save(os.path.join(OUT, 'banner.svg'))
+    wordmark(c, W / 2, 186, 96)
+    tagline(c, W / 2, 258, 25, 'FULL-STACK', 'DEVELOPER', 120)
+    c.text('REACT  ·  NEXT.JS  ·  TYPESCRIPT  ·  FASTAPI', LIGHT, 0, 18, W / 2, 316, MUTED, tracking=0.26, anchor='middle')
+    c.save(os.path.join(OUT, 'cover.svg'))
 
 
 def button(fname, label, primary=False):
