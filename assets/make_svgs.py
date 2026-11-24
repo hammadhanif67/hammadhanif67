@@ -77,6 +77,8 @@ def measure(s, family, wght, size, tracking=0.0):
     return text_path(s, family, wght, size, 0, 0, '#000', tracking)[1]
 
 def save(name, w, h, body, label):
+    from xml.sax.saxutils import escape
+    label = escape(label, {'"': '&quot;'})
     svg = (f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" '
            f'role="img" aria-label="{label}"><title>{label}</title>{body}</svg>')
     open(os.path.join(OUT, name), 'w', encoding='utf-8').write(svg)
