@@ -128,16 +128,16 @@ cols = [('LANGUAGES', ['TypeScript', 'JavaScript', 'Python', 'HTML & CSS', 'C++'
         ('FRAMEWORKS', ['React 19', 'Next.js 16', 'Vite', 'Tailwind CSS', 'FastAPI', 'Framer Motion', 'GSAP']),
         ('QUALITY', ['Playwright', 'axe-core', 'Lighthouse CI', 'ESLint', 'Prettier', 'Strict TypeScript', 'WCAG 2.2 AA']),
         ('PLATFORM', ['Cloudflare Pages', 'Cloudflare D1 / R2', 'Vercel', 'GitHub Actions', 'Git', 'SQLite', 'Node.js'])]
-W, row, top = 1280, 34, 96
-H = top + row * max(len(c[1]) for c in cols) + 40
+W, row, top = 960, 40, 104
+H = top + row * (max(len(c[1]) for c in cols) - 1) + 52
 b = [f'<rect width="{W}" height="{H}" fill="{BG}"/>',
      f'<rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" fill="none" stroke="{EDGE}"/>']
-colw = (W - 144) / 4
+colw = (W - 112) / 4
 for i, (head, items) in enumerate(cols):
-    x = 72 + i * colw
-    p, _ = text_path(f'0{i+1}', 'Inter', 600, 12, x, 56, RED, tracking=0.12); b.append(p)
-    p, _ = text_path(head, 'Inter', 600, 12, x + 30, 56, MUTED, tracking=0.16); b.append(p)
-    b.append(f'<rect x="{x}" y="70" width="{colw - 40}" height="1" fill="{EDGE}"/>')
+    x = 56 + i * colw
+    p, _ = text_path(f'0{i+1}', 'Inter', 600, 14, x, 58, RED, tracking=0.12); b.append(p)
+    p, _ = text_path(head, 'Inter', 600, 14, x + 34, 58, MUTED, tracking=0.14); b.append(p)
+    b.append(f'<rect x="{x}" y="74" width="{colw - 24}" height="1" fill="#2e2e2e"/>')
     for j, it in enumerate(items):
-        p, _ = text_path(it, 'Inter', 500, 18, x, top + 10 + j * row, INK); b.append(p)
-save('skills.svg', W, round(H), ''.join(b), 'Tech stack: ' + '; '.join(h + ': ' + ', '.join(i) for h, i in cols))
+        p, _ = text_path(it, 'Inter', 500, 21, x, top + 10 + j * row, INK); b.append(p)
+save('tech-stack.svg', W, round(H), ''.join(b), 'Tech stack: ' + '; '.join(h + ': ' + ', '.join(i) for h, i in cols))
