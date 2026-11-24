@@ -74,8 +74,8 @@ I'm a Software Engineering student at **Government College University Faisalabad
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hammadhanif67/hammadhanif67/output/github-contribution-grid-snake-dark.svg">
-  <img alt="Contribution grid" src="https://raw.githubusercontent.com/hammadhanif67/hammadhanif67/output/github-contribution-grid-snake.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hammadhanif67/hammadhanif67/output/grid-dark.svg">
+  <img alt="Contribution grid" src="https://raw.githubusercontent.com/hammadhanif67/hammadhanif67/output/grid-light.svg" width="100%">
 </picture>
 
 <br>

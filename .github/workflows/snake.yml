@@ -20,8 +20,8 @@ jobs:
           github_user_name: ${{ github.repository_owner }}
           # Monochrome grid with a red snake (matches the profile palette)
           outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=#E30613&color_dots=#f0f0f0,#c9c9c9,#8f8f8f,#4d4d4d,#111111
-            dist/github-contribution-grid-snake-dark.svg?color_snake=#E30613&color_dots=#1a1a1a,#3a3a3a,#6b6b6b,#a8a8a8,#f5f5f5
+            dist/grid-light.svg?color_snake=#E30613&color_dots=#f0f0f0,#c9c9c9,#8f8f8f,#4d4d4d,#111111
+            dist/grid-dark.svg?color_snake=#E30613&color_dots=#1a1a1a,#3a3a3a,#6b6b6b,#a8a8a8,#f5f5f5
 
       - uses: crazy-max/ghaction-github-pages@v4
         with:
