@@ -1,4 +1,4 @@
-<img src="./assets/cover.svg" width="100%" alt="Hammad Minhas, Full-Stack Developer: React, Next.js, TypeScript, FastAPI">
+<img src="./assets/header.svg" width="100%" alt="Hammad Minhas, Full-Stack Developer: React, Next.js, TypeScript, FastAPI">
 
 <p>
   <a href="https://hammad-minhas-portfolio.vercel.app"><img src="./assets/btn-portfolio.svg" height="40" alt="Portfolio"></a>&nbsp;
