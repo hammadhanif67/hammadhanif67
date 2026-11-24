@@ -140,4 +140,4 @@ for i, (head, items) in enumerate(cols):
     b.append(f'<rect x="{x}" y="70" width="{colw - 40}" height="1" fill="{EDGE}"/>')
     for j, it in enumerate(items):
         p, _ = text_path(it, 'Inter', 500, 18, x, top + 10 + j * row, INK); b.append(p)
-save('stack.svg', W, round(H), ''.join(b), 'Tech stack: ' + '; '.join(h + ': ' + ', '.join(i) for h, i in cols))
+save('skills.svg', W, round(H), ''.join(b), 'Tech stack: ' + '; '.join(h + ': ' + ', '.join(i) for h, i in cols))

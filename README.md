@@ -22,7 +22,7 @@ Software Engineering student at **Government College University Faisalabad** (20
 
 ### Stack
 
-<img src="./assets/stack.svg" width="100%" alt="Tech stack. Languages: TypeScript, JavaScript, Python, HTML and CSS, C++, SQL, 8086 Assembly. Frameworks: React 19, Next.js 16, Vite, Tailwind CSS, FastAPI, Framer Motion, GSAP. Quality: Playwright, axe-core, Lighthouse CI, ESLint, Prettier, strict TypeScript, WCAG 2.2 AA. Platform: Cloudflare Pages, Cloudflare D1 and R2, Vercel, GitHub Actions, Git, SQLite, Node.js.">
+<img src="./assets/skills.svg" width="100%" alt="Tech stack. Languages: TypeScript, JavaScript, Python, HTML and CSS, C++, SQL, 8086 Assembly. Frameworks: React 19, Next.js 16, Vite, Tailwind CSS, FastAPI, Framer Motion, GSAP. Quality: Playwright, axe-core, Lighthouse CI, ESLint, Prettier, strict TypeScript, WCAG 2.2 AA. Platform: Cloudflare Pages, Cloudflare D1 and R2, Vercel, GitHub Actions, Git, SQLite, Node.js.">
 
 <br>
 
