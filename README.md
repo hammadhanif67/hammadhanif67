@@ -31,12 +31,13 @@ Software Engineering student at **Government College University Faisalabad** (20
 | No. | Project | Built with |
 |:---:|---|---|
 | 01 | **[COAL Docs](https://hammadhanif67.github.io/assembly-language-docs/)**: course site for Computer Organization & Assembly Language, with 48 lessons, 53 diagrams and 16 calculators that show their working. [Source](https://github.com/hammadhanif67/assembly-language-docs) | JavaScript · CSS |
-| 02 | **[Karakoram Trails](https://karakoram-trails.pages.dev)**: tour-booking platform for Northern Pakistan with live pricing, seat holds and an admin. [Source](https://github.com/hammadhanif67/karakoram-trails) | Next.js 16 · Cloudflare D1 |
-| 03 | **[AI Resume Analyzer](https://ai-resume-analyzer-app-mocha.vercel.app)**: full-stack resume screening with 33 REST endpoints, ATS scoring, job matching and PDF reports. [Source](https://github.com/hammadhanif67/AI-Resume-Analyzer) | FastAPI · React · TypeScript |
-| 04 | **[CampusFind](https://campusfind-ruby-zeta.vercel.app)**: campus lost-and-found where students report items, claim them with proof and track the hand-over, with an admin moderation console. | Express · MySQL · React 19 |
-| 05 | **[Downsize](https://downsize-alpha.vercel.app)**: image resizer, compressor and converter that runs entirely in the browser, with no uploads. [Source](https://github.com/hammadhanif67/Downsize) | React 19 · TypeScript |
-| 06 | **[VistechBot](https://vistechbotaipk.vercel.app)**: marketing site for an AI customer-support SaaS with design-token theming and build-time SEO. [Source](https://github.com/hammadhanif67/VistechBot) | React 19 · GSAP |
-| 07 | **[LinkAura](https://link-aura-ruby.vercel.app)**: curated directory of websites, AI tools, books and research resources. [Source](https://github.com/hammadhanif67/LinkAura) | React · TypeScript |
+| 02 | **[ChariotClaims](https://chariotclaims.vercel.app)**: Next.js rebuild of a claims-recovery site, with Playwright, axe and Lighthouse CI checks on every build. | Next.js · TypeScript · Playwright |
+| 03 | **[Karakoram Trails](https://karakoram-trails.pages.dev)**: tour-booking platform for Northern Pakistan with live pricing, seat holds and an admin. [Source](https://github.com/hammadhanif67/karakoram-trails) | Next.js 16 · Cloudflare D1 |
+| 04 | **[AI Resume Analyzer](https://ai-resume-analyzer-app-mocha.vercel.app)**: full-stack resume screening with 33 REST endpoints, ATS scoring, job matching and PDF reports. [Source](https://github.com/hammadhanif67/AI-Resume-Analyzer) | FastAPI · React · TypeScript |
+| 05 | **[CampusFind](https://campusfind-ruby-zeta.vercel.app)**: campus lost-and-found where students report items, claim them with proof and track the hand-over, with an admin moderation console. | Express · MySQL · React 19 |
+| 06 | **[Downsize](https://downsize-alpha.vercel.app)**: image resizer, compressor and converter that runs entirely in the browser, with no uploads. [Source](https://github.com/hammadhanif67/Downsize) | React 19 · TypeScript |
+| 07 | **[VistechBot](https://vistechbotaipk.vercel.app)**: marketing site for an AI customer-support SaaS with design-token theming and build-time SEO. [Source](https://github.com/hammadhanif67/VistechBot) | React 19 · GSAP |
+| 08 | **[LinkAura](https://link-aura-ruby.vercel.app)**: curated directory of websites, AI tools, books and research resources. [Source](https://github.com/hammadhanif67/LinkAura) | React · TypeScript |
 
 <br>
 
