@@ -14,7 +14,7 @@
 Software Engineering student at **Government College University Faisalabad** (2024–2028). I build complete web products, from the interface to the API to the tests that keep them working.
 
 - **Front end:** React 19, Next.js 16 and TypeScript, with accessibility (WCAG 2.2 AA), SEO and performance treated as requirements.
-- **Back end:** FastAPI and Cloudflare Pages Functions + D1, including authentication, booking rules and server-side validation.
+- **Back end:** FastAPI, Express + MySQL, and Cloudflare Pages Functions + D1, including authentication, booking rules and server-side validation.
 - **Quality:** Playwright and axe tests, Lighthouse CI budgets, strict TypeScript and per-page Content-Security-Policy.
 - **Fundamentals:** a 48-lesson course on Computer Organization & 8086 Assembly, and an NTFS file-recovery tool in C++.
 
@@ -33,9 +33,10 @@ Software Engineering student at **Government College University Faisalabad** (20
 | 01 | **[COAL Docs](https://hammadhanif67.github.io/assembly-language-docs/)**: course site for Computer Organization & Assembly Language, with 48 lessons, 53 diagrams and 16 calculators that show their working. [Source](https://github.com/hammadhanif67/assembly-language-docs) | JavaScript · CSS |
 | 02 | **[Karakoram Trails](https://karakoram-trails.pages.dev)**: tour-booking platform for Northern Pakistan with live pricing, seat holds and an admin. [Source](https://github.com/hammadhanif67/karakoram-trails) | Next.js 16 · Cloudflare D1 |
 | 03 | **[AI Resume Analyzer](https://ai-resume-analyzer-app-mocha.vercel.app)**: full-stack resume screening with 33 REST endpoints, ATS scoring, job matching and PDF reports. [Source](https://github.com/hammadhanif67/AI-Resume-Analyzer) | FastAPI · React · TypeScript |
-| 04 | **[Downsize](https://downsize-alpha.vercel.app)**: image resizer, compressor and converter that runs entirely in the browser, with no uploads. [Source](https://github.com/hammadhanif67/Downsize) | React 19 · TypeScript |
-| 05 | **[VistechBot](https://vistechbotaipk.vercel.app)**: marketing site for an AI customer-support SaaS with design-token theming and build-time SEO. [Source](https://github.com/hammadhanif67/VistechBot) | React 19 · GSAP |
-| 06 | **[LinkAura](https://link-aura-ruby.vercel.app)**: curated directory of websites, AI tools, books and research resources. [Source](https://github.com/hammadhanif67/LinkAura) | React · TypeScript |
+| 04 | **[CampusFind](https://campusfind-ruby-zeta.vercel.app)**: campus lost-and-found where students report items, claim them with proof and track the hand-over, with an admin moderation console. | Express · MySQL · React 19 |
+| 05 | **[Downsize](https://downsize-alpha.vercel.app)**: image resizer, compressor and converter that runs entirely in the browser, with no uploads. [Source](https://github.com/hammadhanif67/Downsize) | React 19 · TypeScript |
+| 06 | **[VistechBot](https://vistechbotaipk.vercel.app)**: marketing site for an AI customer-support SaaS with design-token theming and build-time SEO. [Source](https://github.com/hammadhanif67/VistechBot) | React 19 · GSAP |
+| 07 | **[LinkAura](https://link-aura-ruby.vercel.app)**: curated directory of websites, AI tools, books and research resources. [Source](https://github.com/hammadhanif67/LinkAura) | React · TypeScript |
 
 <br>
 
